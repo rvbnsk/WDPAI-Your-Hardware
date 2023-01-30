@@ -15,6 +15,15 @@ body {
   background-color: rgba(115, 115, 115, 0.616);
 }
 
+.main_page {
+  font-family: 'Lato', sans-serif;
+  background-image: url("../media/IMG_5329.jpg");
+  background-color: rgba(115, 115, 115, 0.616);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
 /* MENU STYLES */
 .menu-wrap {
   position: fixed;
@@ -48,12 +57,12 @@ body {
   justify-content: center;
 }
 
-/* Hamburger Line */
 .menu-wrap .hamburger > div {
   position: relative;
   flex: none;
   width: 100%;
   height: 2px;
+  border-radius: 15%;
   background: #fff;
   display: flex;
   align-items: center;
@@ -61,7 +70,6 @@ body {
   transition: all 0.4s ease;
 }
 
-/* Hamburger Lines - Top & Bottom */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
   content: '';
@@ -70,6 +78,7 @@ body {
   top: -10px;
   width: 100%;
   height: 2px;
+  border-radius: 15%;
   background: inherit;
 }
 
@@ -151,7 +160,7 @@ body {
   color: #fff;
   font-size: 40px;
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   padding: 1rem;
 }
 
@@ -227,7 +236,7 @@ body {
     font-size: 65px;
     color: #fff;
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 250;
     letter-spacing: 2px
 }
 
