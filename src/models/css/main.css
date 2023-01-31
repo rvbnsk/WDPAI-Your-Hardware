@@ -21,7 +21,9 @@ body {
   background-color: rgba(115, 115, 115, 0.616);
   background-repeat: no-repeat;
   background-size: auto;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* MENU STYLES */
@@ -131,7 +133,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: black;
-  opacity: 0.90;
+  opacity: 0.99;
 }
 
 .menu-wrap .menu > div {
@@ -277,4 +279,20 @@ body {
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
+}
+
+.main_text {
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
 }
