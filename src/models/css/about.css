@@ -34,17 +34,3 @@ icons {
 .visit {
     margin-top: 10vh;
 }
-
-.footer {
-    position: absolute;
-    bottom: 1%;
-    left: 45%;
-    right: 40%;
-    justify-content: center;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-}

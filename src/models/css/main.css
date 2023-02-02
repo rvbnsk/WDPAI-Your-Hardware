@@ -229,7 +229,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     bottom: 0;
 }
 
@@ -294,5 +294,19 @@ body {
   align-items: center;
   text-align: center;
 
+  color: #FFFFFF;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
+  right: 40%;
+  justify-content: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 15px;
   color: #FFFFFF;
 }
