@@ -6,7 +6,7 @@
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/login.css" type="text/css">
+  <link rel="stylesheet" href="../css/register.css" type="text/css">
   <link rel="stylesheet" href="../css/main.css" type="text/css">
   <title>Your Hardware</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
@@ -37,19 +37,25 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
 
-<form form action="login" method="POST">
+<form action="register" method="POST">
     <div class="container">
-      <label for="uname">Username</label>
-      <input type="text" placeholder="Enter Username" name="email" required>
-  
-      <label for="psw">Password</label>
-      <input type="password" placeholder="Enter Password" name="password" required>
-  
-      <button type="submit">Login</button>
+        <label for="uname">Name</label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="uname">Surname</label>
+        <input type="text" placeholder="Enter Surname" name="surname" required>
+
+        <label for="uname">E-mail</label>
+        <input type="text" placeholder="Enter E-mail" name="email" required>
+
+        <label for="uname">Password</label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Register</button>
     </div>
-  </form>
+</form>
 
 </body>
 </html>
