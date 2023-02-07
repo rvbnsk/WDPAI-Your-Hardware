@@ -6,8 +6,8 @@
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/main.css" type="text/css">
-  <link rel="stylesheet" href="../css/contact.css" type="text/css">
+  <link rel="stylesheet" href="src/css/main.css" type="text/css">
+  <link rel="stylesheet" href="src/css/contact.css" type="text/css">
   <title>Kontakt</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
 
@@ -27,13 +27,12 @@
 		<div>
 		<div>
 			<ul>
-			<li><a href="main.html">Main Page</a></li>
-			<li><a href="posts.html">Posts</a></li>
-			<li><a href="add.html">Add Post</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="register.html">Register</a></li>
-			<li><a href="login.html">Login</a></li>
+			<li><a href="home">Main Page</a></li>
+			<li><a href="posts">Posts</a></li>
+			<li><a href="addPost">Add Post</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="logout">Logout</a></li>
 			</ul>
 		</div>
 		</div>
