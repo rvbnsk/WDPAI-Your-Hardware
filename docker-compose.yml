@@ -11,6 +11,8 @@ services:
             - .:/app/
         links:
             - php
+        networks:
+            - defaultNetwork
 
     php:
         build:
@@ -18,3 +20,26 @@ services:
                 dockerfile: docker/php/Dockerfile
         volumes:
             - .:/app/
+        depends_on:
+            - db
+        networks:
+            - defaultNetwork
+    
+    db:
+        image: postgres:14.1-alpine
+        restart: always
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_DB=postgres
+        ports:
+            - '5432:5432'
+        volumes: 
+            - ./postgres-data:/var/lib/postgresql/data
+            - ./docker/postgres/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+        networks:
+            - defaultNetwork
+volumes:
+    postgres-data:
+networks:
+    defaultNetwork:
