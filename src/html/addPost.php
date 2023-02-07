@@ -6,13 +6,19 @@
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/add.css" type="text/css">
-  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="src/css/add.css" type="text/css">
+  <link rel="stylesheet" href="src/css/main.css" type="text/css">
   <title>Your Hardware</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
 </head>
 
 <body class="add">
+    <?php
+        session_start();
+        if(!$_SESSION["isLoggedIn"]) {
+        header("Location: http://localhost:8080/login");
+        }
+    ?>
 
 <div class="about_me_main">
     <a href="main.html"><h3>Your Hardware</h3></a>
@@ -27,13 +33,13 @@
       <div>
         <div>
           <ul>
-            <li><a href="main.html">Main Page</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="add.html">Add Post</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="home">Main Page</a></li>
+            <li><a href="posts">Posts</a></li>
+            <li><a href="addPost">Add Post</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="register">Register</a></li>
+            <li><a href="login">Login</a></li>
           </ul>
         </div>
       </div>
@@ -42,6 +48,15 @@
 
 <form action="addPost" method="POST" ENCTYPE="multipart/form-data">
   <div class="container">
+    <div class="">
+        <?php 
+            if(isset($messages)) {
+                foreach($messages as $message) {
+                    echo $message;
+                }
+            }
+        ?>
+    </div>
     <input type="title" name="text" placeholder="title">
     <textarea name="description" rows="5" placeholder="description"></textarea>
     <input type="file" name="file">
