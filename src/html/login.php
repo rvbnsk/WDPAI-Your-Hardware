@@ -6,8 +6,8 @@
   <meta name="description" content=""/>
   <meta name="keywords" content=""/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/login.css" type="text/css">
-  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="src/css/login.css" type="text/css">
+  <link rel="stylesheet" href="src/css/main.css" type="text/css">
   <title>Your Hardware</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
 <body>
 
 <div class="about_me_main">
-    <a href="main.html"><h3>Your Hardware</h3></a>
+    <a href="home"><h3>Your Hardware</h3></a>
     <p id="about_me_main">
     </p>
 </div>
@@ -27,13 +27,10 @@
       <div>
         <div>
           <ul>
-            <li><a href="main.html">Main Page</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="add.html">Add Post</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="home">Main Page</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="register">Register</a></li>
           </ul>
         </div>
       </div>
@@ -42,8 +39,17 @@
 
 <form form action="login" method="POST">
     <div class="container">
-      <label for="uname">E-mail</label>
-      <input type="text" placeholder="Enter E-mail" name="email" required>
+    <div> 
+        <?php 
+            if(isset($messages)) {
+                foreach($messages as $message) {
+                    echo $message;
+                }
+            }
+        ?>
+    </div>
+      <label for="uname">Username</label>
+      <input type="text" placeholder="Enter Username" name="email" required>
   
       <label for="psw">Password</label>
       <input type="password" placeholder="Enter Password" name="password" required>
@@ -51,5 +57,6 @@
       <button type="submit">Login</button>
     </div>
   </form>
+
 </body>
 </html>
