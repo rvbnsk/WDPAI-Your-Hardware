@@ -34,3 +34,31 @@ icons {
 .visit {
     margin-top: 10vh;
 }
+
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+
+    .about_text {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    .main_text {
+        margin-bottom: 15%;
+      }
+    
+      .about_me_main {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+    
+      .about_me_main h3 {
+        font-size: 50px;
+      }
+  }

@@ -19,7 +19,7 @@ const fetchDetails = async () => {
         newPostText.innerHTML = `${element.description}`;
   
         const newImg = document.createElement("div");
-        newImg.innerHTML = `<img src="${element.imageurl}" alt="" width=300 />`;
+        newImg.innerHTML = `<img src="${element.imageurl}" alt="" width=600 />`;
   
         parentElement.appendChild(newElement);
         postText.appendChild(newPostText);

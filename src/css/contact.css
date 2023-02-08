@@ -15,7 +15,7 @@ textarea, span {
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
-  color: white;
+  color: black;
 }
 
 input[type=text], textarea {
@@ -31,7 +31,7 @@ input[type=text], textarea {
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
-  color: white;
+  color: black;
 }
 
 form {
@@ -39,6 +39,29 @@ form {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+
+  .main_text {
+    margin-bottom: 15%;
+  }
+
+  .about_me_main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .about_me_main h3 {
+    font-size: 50px;
+  }
 }
 
 button {

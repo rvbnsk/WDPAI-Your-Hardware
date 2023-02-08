@@ -8,47 +8,15 @@ a {
     flex-direction: column;
 }
 
-.post1 {
+.post {
     margin-left: 10vh;
     margin-right: 10vh;
     margin-top: 5vh;
     box-sizing: border-box;
     height: 30vh;
-    background: url(../media/thomas-foster-vWgoeEYdtIY-unsplash.jpg);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.post2 {
-    margin-left: 10vh;
-    margin-right: 10vh;
-    margin-top: 5vh;
-    box-sizing: border-box;
-    height: 30vh;
-    background: url(../media/redd-f-YYMVV-qMD6Q-unsplash.jpg);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.post3 {
-    margin-left: 10vh;
-    margin-right: 10vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    box-sizing: border-box;
-    height: 30vh;
-    background: url(../media/ella-don-mCf1ywKWzoQ-unsplash.jpg);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -62,10 +30,7 @@ a {
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -80,3 +45,26 @@ a {
     
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+
+    .main_text {
+        margin-bottom: 15%;
+      }
+    
+      .about_me_main {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+    
+      .about_me_main h3 {
+        font-size: 50px;
+      }
+  }

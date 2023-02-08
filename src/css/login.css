@@ -56,6 +56,19 @@
     .cancelbtn {
       width: 100%;
     }
+
+    .main_text {
+      margin-bottom: 15%;
+    }
+  
+    .about_me_main {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  
+    .about_me_main h3 {
+      font-size: 50px;
+    }
   }
   
   a {

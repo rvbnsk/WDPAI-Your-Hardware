@@ -11,8 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body class="main_page">
   <div class="menu-wrap">
     <input type="checkbox" class="toggler">
