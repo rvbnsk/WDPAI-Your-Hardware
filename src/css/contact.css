@@ -41,7 +41,26 @@ form {
   align-items: center;
 }
 
-@media screen and (max-width: 300px) {
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px; 
+}
+
+.contact_btn {
+  width: 10%;
+}
+
+.contact_form {
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 500px) {
   span.psw {
     display: block;
     float: none;
@@ -62,23 +81,12 @@ form {
   .about_me_main h3 {
     font-size: 50px;
   }
-}
 
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 20px; 
-}
+  .contact_btn {
+    width: 50%;
+  }
 
-.contact_btn {
-  width: 10%;
-}
-
-.contact_form {
-  margin-top: 5vh;
+  .btn {
+    text-align: center;
+  }
 }

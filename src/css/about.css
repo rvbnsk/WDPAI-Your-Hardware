@@ -31,11 +31,22 @@ icons {
     color: #FFFFFF;
 }
 
+.footer {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-top: 40vh;
+    text-align: center;
+}
+
 .visit {
     margin-top: 10vh;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
     span.psw {
       display: block;
       float: none;
@@ -60,5 +71,11 @@ icons {
     
       .about_me_main h3 {
         font-size: 50px;
+      }
+
+      .footer {
+        text-align: center;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
       }
   }

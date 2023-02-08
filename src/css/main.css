@@ -291,20 +291,6 @@ body {
   color: #FFFFFF;
 }
 
-.footer {
-  position: absolute;
-  bottom: 1%;
-  left: 45%;
-  right: 40%;
-  justify-content: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 15px;
-  color: #FFFFFF;
-}
-
 @media (max-width: 500px) {
   .main_text {
     margin-bottom: 15%;

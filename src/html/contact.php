@@ -78,7 +78,7 @@
 				<div class="contact_btn">
 					<button class="contact100-form-btn">
 						<span>
-							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							<i class="btn" aria-hidden="true"></i>
 							Send
 						</span>
 					</button>

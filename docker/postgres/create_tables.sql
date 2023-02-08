@@ -11,7 +11,7 @@ CREATE TABLE users (
 CREATE TABLE data (
     id serial not null,
     title varchar(100) not null,
-    description varchar(100) not null,
+    description varchar(1000) not null,
     createdBy varchar(100) not null,
     imageUrl varchar(100) not null
 );
