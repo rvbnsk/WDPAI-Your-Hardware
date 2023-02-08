@@ -26,13 +26,21 @@
     <div class="menu">
       <div>
         <div>
-          <ul>
+        <ul>
             <li><a href="home">Main Page</a></li>
-            <li><a href="posts">Posts</a></li>
-            <li><a href="addPost">Add Post</a></li>
             <li><a href="about">About</a></li>
             <li><a href="contact">Contact</a></li>
-            <li><a href="login">Login</a></li>
+            <?php
+            session_start();
+            if(!$_SESSION["isLoggedIn"]) {
+              echo '<li><a href="login">Login</a></li>';
+              echo '<li><a href="register">Register</a></li>';
+            } else {
+              echo '<li><a href="posts">Posts</a></li>';
+              echo '<li><a href="addPost">Add Post</a></li>';
+              echo '<li><a href="logout">Logout</a></li>';
+            }
+            ?>
           </ul>
         </div>
       </div>
@@ -46,7 +54,7 @@
     <a href="https://www.facebook.com/"><img src="src/media/icons8-facebook-240.png"></a>
     <a href="https://www.instagram.com/"><img src="src/media/icons8-instagram-240.png"></a>
     <a href="https://www.linkedin.com/"><img src="src/media/icons8-linkedin-240.png"></a>
-    <a href="https://www.github.com/"><img src="src./media/icons8-github-240.png"></a>
+    <a href="https://www.github.com/"><img src="src/media/icons8-github-240.png"></a>
     </div>
 </div>
 

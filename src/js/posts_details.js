@@ -15,7 +15,7 @@ const fetchDetails = async () => {
         const newElement = document.createElement("h3");
         newElement.innerHTML = `${element.title}`;
   
-        const newPostText = document.createElement("h3");
+        const newPostText = document.createElement("p");
         newPostText.innerHTML = `${element.description}`;
   
         const newImg = document.createElement("div");

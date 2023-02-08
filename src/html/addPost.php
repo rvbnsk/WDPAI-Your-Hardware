@@ -21,7 +21,7 @@
     ?>
 
 <div class="about_me_main">
-    <a href="main.html"><h3>Your Hardware</h3></a>
+    <a href="home"><h3>Your Hardware</h3></a>
     <p id="about_me_main">
     </p>
 </div>
@@ -32,14 +32,21 @@
     <div class="menu">
       <div>
         <div>
-          <ul>
+        <ul>
             <li><a href="home">Main Page</a></li>
-            <li><a href="posts">Posts</a></li>
-            <li><a href="addPost">Add Post</a></li>
             <li><a href="about">About</a></li>
             <li><a href="contact">Contact</a></li>
-            <li><a href="register">Register</a></li>
-            <li><a href="login">Login</a></li>
+            <?php
+            session_start();
+            if(!$_SESSION["isLoggedIn"]) {
+              echo '<li><a href="login">Login</a></li>';
+              echo '<li><a href="register">Register</a></li>';
+            } else {
+              echo '<li><a href="posts">Posts</a></li>';
+              echo '<li><a href="addPost">Add Post</a></li>';
+              echo '<li><a href="logout">Logout</a></li>';
+            }
+            ?>
           </ul>
         </div>
       </div>

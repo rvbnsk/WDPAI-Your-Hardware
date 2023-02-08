@@ -11,8 +11,9 @@ const fetchPosts = async () => {
           <div class="post" style="background-image: url(${element.imageurl})">
             <p class="post1_text">${element.title}</p>
             <a href="postDetails?id=${element.id}">
-              <p class="post1_read">Created By ${element.createdby} Read more...</p>
+              <p class="post1_read">Read more...</p>
             </a>
+            <p class="post1_read">Created By ${element.createdby} </p>
           </div>`;
   
           parentElement.appendChild(newElement);
